@@ -1,0 +1,28 @@
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p><% current_admin_user.portfolio.info%></p>
+        </div>
+
+        <div class="row">
+          <% current_admin_user.portfolio.images.each do |img| %>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="<%= rails_blob_url(img) %>" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <%# <h4>Web</h4>
+                  <p>Web</p> %>
+                  <div class="portfolio-links">
+                    <%# <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> %>
+                    <a href="MyResume/portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <%end%>
+        </div>
+
+      </div>
+    </section>

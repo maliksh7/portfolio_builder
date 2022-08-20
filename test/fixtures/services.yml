@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  service_info: MyText
+  s1_title: MyString
+  s1_desc: MyText
+  s2_title: MyString
+  s2_desc: MyText
+  s3_title: MyString
+  s3_desc: MyText
+  s4_title: MyString
+  s4_desc: MyText
+  s5_title: MyString
+  s5_desc: MyText
+  s6_title: MyString
+  s6_desc: MyText
+  admin_user: one
+
+two:
+  service_info: MyText
+  s1_title: MyString
+  s1_desc: MyText
+  s2_title: MyString
+  s2_desc: MyText
+  s3_title: MyString
+  s3_desc: MyText
+  s4_title: MyString
+  s4_desc: MyText
+  s5_title: MyString
+  s5_desc: MyText
+  s6_title: MyString
+  s6_desc: MyText
+  admin_user: two

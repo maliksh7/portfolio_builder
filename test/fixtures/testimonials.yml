@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  person1_name: MyString
+  p1_role: MyString
+  p1_quote: MyText
+  person2_name: MyString
+  p2_role: MyString
+  p2_quote: MyText
+  person3_name: MyString
+  p3_role: MyString
+  p3_quote: MyText
+  person4_name: MyString
+  p4_role: MyString
+  p4_quote: MyText
+  person5_name: MyString
+  p5_role: MyString
+  p5_quote: MyText
+
+two:
+  person1_name: MyString
+  p1_role: MyString
+  p1_quote: MyText
+  person2_name: MyString
+  p2_role: MyString
+  p2_quote: MyText
+  person3_name: MyString
+  p3_role: MyString
+  p3_quote: MyText
+  person4_name: MyString
+  p4_role: MyString
+  p4_quote: MyText
+  person5_name: MyString
+  p5_role: MyString
+  p5_quote: MyText

@@ -1,0 +1,65 @@
+ <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <%# <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> %>
+          <%= current_admin_user.resume.bio %>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4><%= current_admin_user.profile.first_name + ' '+ current_admin_user.profile.last_name %></h4>
+              <p><em><%= current_admin_user.resume.bio%></em></p>
+              <ul>
+                <li><%= current_admin_user.resume.address%></li>
+                <li><%= current_admin_user.about.phone%></li>
+                <li><%= current_admin_user.about.email%></li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4><%= current_admin_user.resume.degree1_title%></h4>
+              <h5><%= current_admin_user.resume.d1_start_year%> - <%= current_admin_user.resume.d1_end_year%></h5>
+              <p><em><%= current_admin_user.resume.d1_institute%></em></p>
+              <p><%= current_admin_user.resume.d1_details%></p>
+            </div>
+            <div class="resume-item">
+              <h4><%= current_admin_user.resume.degree2_title%></h4>
+              <h5><%= current_admin_user.resume.d2_start_year%> - <%= current_admin_user.resume.d2_end_year%></h5>
+              <p><em><%= current_admin_user.resume.d2_institute%></em></p>
+              <p><%= current_admin_user.resume.d2_details%></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4><%= current_admin_user.resume.role1_title%></h4>
+              <h5><%= current_admin_user.resume.r1_start_year%> - <%= current_admin_user.resume.r1_end_year%></h5>
+              <p><em><%= current_admin_user.resume.r1_company%></em></p>
+              <ul>
+                <li><%= current_admin_user.resume.r1_d1%></li>
+                <li><%= current_admin_user.resume.r1_d2%></li>
+                <li><%= current_admin_user.resume.r1_d3%></li>
+                <li><%= current_admin_user.resume.r1_d4%></li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4><%= current_admin_user.resume.role2_title%></h4>
+              <h5><%= current_admin_user.resume.r2_start_year%> - Present </h5>
+              <p><em><%= current_admin_user.resume.r2_company%></em></p>
+              <ul>
+                <li><%= current_admin_user.resume.r2_d1%></li>
+                <li><%= current_admin_user.resume.r2_d2%></li>
+                <li><%= current_admin_user.resume.r2_d3%></li>
+                <li><%= current_admin_user.resume.r2_d4%></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>

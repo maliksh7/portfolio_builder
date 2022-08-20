@@ -1,0 +1,51 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  about_me: MyText
+  birthday: 2022-08-17
+  age: 1
+  website: MyString
+  degree: MyString
+  phone: 1
+  email: MyString
+  city: MyString
+  freelance: MyString
+  add_more: MyText
+  fact_info: MyText
+  clients: 1
+  projects: 1
+  hours_of_support: 1
+  awards: 1
+  skill_description: MyText
+  HTML: 1
+  CSS: 1
+  JAVASCRIPT: 1
+  PHP: 1
+  WORDPRESS: 1
+  PHOTOSHOP: 1
+  admin_user: one
+
+two:
+  about_me: MyText
+  birthday: 2022-08-17
+  age: 1
+  website: MyString
+  degree: MyString
+  phone: 1
+  email: MyString
+  city: MyString
+  freelance: MyString
+  add_more: MyText
+  fact_info: MyText
+  clients: 1
+  projects: 1
+  hours_of_support: 1
+  awards: 1
+  skill_description: MyText
+  HTML: 1
+  CSS: 1
+  JAVASCRIPT: 1
+  PHP: 1
+  WORDPRESS: 1
+  PHOTOSHOP: 1
+  admin_user: two

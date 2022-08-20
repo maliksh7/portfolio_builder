@@ -1,0 +1,63 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bio: MyText
+  address: MyString
+  degree1_title: MyString
+  d1_start_date: 2022-08-17
+  d1_end_date: 2022-08-17
+  d1_institute: MyString
+  d1_details: MyText
+  degree2_title: MyString
+  d2_start_date: 2022-08-17
+  d2_end_date: 2022-08-17
+  d2_institute: MyString
+  d2_details: MyText
+  role1_title: MyString
+  r1_start_date: 2022-08-17
+  r1_end_date: 2022-08-17
+  r1_company: MyString
+  r1_d1: MyText
+  r1_d2: MyText
+  r1_d3: MyText
+  r1_d4: MyText
+  role2_title: MyString
+  r2_start_date: 2022-08-17
+  r2_end_date: 2022-08-17
+  r2_company: MyString
+  r2_d1: MyText
+  r2_d2: MyText
+  r2_d3: MyText
+  r2_d4: MyText
+  admin_user: one
+
+two:
+  bio: MyText
+  address: MyString
+  degree1_title: MyString
+  d1_start_date: 2022-08-17
+  d1_end_date: 2022-08-17
+  d1_institute: MyString
+  d1_details: MyText
+  degree2_title: MyString
+  d2_start_date: 2022-08-17
+  d2_end_date: 2022-08-17
+  d2_institute: MyString
+  d2_details: MyText
+  role1_title: MyString
+  r1_start_date: 2022-08-17
+  r1_end_date: 2022-08-17
+  r1_company: MyString
+  r1_d1: MyText
+  r1_d2: MyText
+  r1_d3: MyText
+  r1_d4: MyText
+  role2_title: MyString
+  r2_start_date: 2022-08-17
+  r2_end_date: 2022-08-17
+  r2_company: MyString
+  r2_d1: MyText
+  r2_d2: MyText
+  r2_d3: MyText
+  r2_d4: MyText
+  admin_user: two

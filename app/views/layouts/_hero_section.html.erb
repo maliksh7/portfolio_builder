@@ -1,0 +1,13 @@
+<section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1><%= current_admin_user.profile.first_name + ' ' + current_admin_user.profile.last_name %></h1>
+        <p>I'm <%= current_admin_user.profile.designation %></p>
+        <div class="social-links">
+        <a href="<%= current_admin_user.profile.twitter %>" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="<%= current_admin_user.profile.facebook %>" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="<%= current_admin_user.profile.instagram %>" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="<%= current_admin_user.profile.skype %>" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="<%= current_admin_user.profile.linkedin %>" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </div>
+</section>
