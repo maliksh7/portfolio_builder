@@ -3,14 +3,13 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <%# <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> %>
           <%= current_admin_user.about.about_me %>
         </div>
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="<%= asset_path('profile-img.jpg') %>" class="img-fluid" alt="">
             <%# <img src="<%= image_tag 'profile-img.jpg', alt: 'profile-img' %>
+            <% image_tag url_for(current_admin_user.about.image), class:"img-fluid" %>
 
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">

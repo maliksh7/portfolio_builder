@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_18_214028) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_23_153347) do
   create_table "abouts", force: :cascade do |t|
     t.text "about_me"
     t.date "birthday"
@@ -129,54 +129,24 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_18_214028) do
   end
 
   create_table "resumes", force: :cascade do |t|
-    t.text "bio"
-    t.string "address"
-    t.string "degree1_title"
-    t.integer "d1_start_year"
-    t.integer "d1_end_year"
-    t.string "d1_institute"
-    t.text "d1_details"
-    t.string "degree2_title"
-    t.integer "d2_start_year"
-    t.integer "d2_end_year"
-    t.string "d2_institute"
-    t.text "d2_details"
-    t.string "role1_title"
-    t.integer "r1_start_year"
-    t.integer "r1_end_year"
-    t.string "r1_company"
-    t.text "r1_d1"
-    t.text "r1_d2"
-    t.text "r1_d3"
-    t.text "r1_d4"
-    t.string "role2_title"
-    t.integer "r2_start_year"
-    t.integer "r2_end_year"
-    t.string "r2_company"
-    t.text "r2_d1"
-    t.text "r2_d2"
-    t.text "r2_d3"
-    t.text "r2_d4"
+    t.string "degree_title"
+    t.string "institute"
+    t.text "details"
+    t.string "role_title"
+    t.string "company"
+    t.text "description"
     t.integer "admin_user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "badge"
+    t.string "duration"
     t.index ["admin_user_id"], name: "index_resumes_on_admin_user_id"
   end
 
   create_table "services", force: :cascade do |t|
     t.text "service_info"
-    t.string "s1_title"
-    t.text "s1_desc"
-    t.string "s2_title"
-    t.text "s2_desc"
-    t.string "s3_title"
-    t.text "s3_desc"
-    t.string "s4_title"
-    t.text "s4_desc"
-    t.string "s5_title"
-    t.text "s5_desc"
-    t.string "s6_title"
-    t.text "s6_desc"
+    t.string "title"
+    t.text "description"
     t.integer "admin_user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -184,21 +154,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_18_214028) do
   end
 
   create_table "testimonials", force: :cascade do |t|
-    t.string "person1_name"
-    t.string "p1_role"
-    t.text "p1_quote"
-    t.string "person2_name"
-    t.string "p2_role"
-    t.text "p2_quote"
-    t.string "person3_name"
-    t.string "p3_role"
-    t.text "p3_quote"
-    t.string "person4_name"
-    t.string "p4_role"
-    t.text "p4_quote"
-    t.string "person5_name"
-    t.string "p5_role"
-    t.text "p5_quote"
+    t.string "name"
+    t.string "role"
+    t.text "quote"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "admin_user_id", null: false

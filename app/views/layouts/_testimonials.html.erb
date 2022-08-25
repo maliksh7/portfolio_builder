@@ -4,75 +4,26 @@
         <div class="section-title">
           <h2>Testimonials</h2>
         </div>
-
+        
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
+            <% current_admin_user.testimonial.each do |ser| %>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="MyResume/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3><%= current_admin_user.testimonial.person1_name %></h3>
-                <h4><%= current_admin_user.testimonial.p1_role %></h4>
+              <%# debugger %>
+                <%# <img src="MyResume/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> %>
+                <%= image_tag url_for(ser.image), class:"testimonial-img" %>
+                <h3><%= ser.name %></h3>
+                <h4><%= ser.role %></h4>      
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    <%= current_admin_user.testimonial.p1_quote %>
+                    <%= ser.quote %>
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="MyResume/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3><%= current_admin_user.testimonial.person2_name %></h3>
-                <h4><%= current_admin_user.testimonial.p2_role %></h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  <%= current_admin_user.testimonial.p2_quote %>
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="MyResume/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3><%= current_admin_user.testimonial.person3_name%></h3>
-                <h4><%= current_admin_user.testimonial.p3_role %></h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    <%= current_admin_user.testimonial.p1_quote %>
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="MyResume/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3><%= current_admin_user.testimonial.person4_name %></h3>
-                <h4><%= current_admin_user.testimonial.p4_role %></h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  <%= current_admin_user.testimonial.p4_quote %>
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="MyResume/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3><%= current_admin_user.testimonial.person5_name %></h3>
-                <h4><%= current_admin_user.testimonial.p5_role %></h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  <%= current_admin_user.testimonial.p5_quote %>
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
+            <% end %>
           </div>
           <div class="swiper-pagination"></div>
         </div>

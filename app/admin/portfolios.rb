@@ -1,5 +1,9 @@
 ActiveAdmin.register Portfolio do
-
+  controller do
+    def scoped_collection
+      Portfolio.where(id: current_admin_user.portfolio.id)
+    end
+  end
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -9,8 +13,8 @@ ActiveAdmin.register Portfolio do
 
   form  do |f|
     f.inputs "Portfolio" do
+      f.input :admin_user_id, label: 'Admin ID', input_html: { value: current_admin_user.id, :disabled => true }
       f.input :info
-      f.input :admin_user_id
       f.input :images, as: :file, input_html: { multiple: true }
     end
 

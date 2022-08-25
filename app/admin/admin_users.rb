@@ -1,6 +1,10 @@
 ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirmation
-
+  controller do
+    def scoped_collection
+      AdminUser.where(id: current_admin_user.id)
+    end
+  end
   index do
     selectable_column
     id_column

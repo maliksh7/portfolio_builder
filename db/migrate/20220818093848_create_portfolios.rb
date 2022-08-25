@@ -3,7 +3,6 @@ class CreatePortfolios < ActiveRecord::Migration[7.0]
     create_table :portfolios do |t|
       t.text :info
       t.references :admin_user, null: false, foreign_key: true
-
       t.timestamps
     end
   end

@@ -5,9 +5,9 @@ class AdminUser < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_one :profile
   has_one :about
-  has_one :resume
+  has_many :resume
   has_one :portfolio
-  has_one :service
-  has_one :testimonial
+  has_many :service
+  has_many :testimonial
 
 end
